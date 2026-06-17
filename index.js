@@ -6,7 +6,7 @@ function getComputerChoice() {
     return choices[randomIndex];
 }
 console.log(getComputerChoice())
-function gethumanChoice() {
+function getHumanChoice() {
     const userInput = prompt("Enter rock, paper, or scissors:");
     return userInput.toLowerCase();
 }
@@ -27,9 +27,7 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 function playGame() {
-    for (let i = 0; i < 5; i++) {
-        const humanChoice = gethumanChoice();
+        const humanChoice = getHumanChoice();
         const computerChoice = getComputerChoice();
         console.log(playRound(humanChoice, computerChoice));
-    }
 }
